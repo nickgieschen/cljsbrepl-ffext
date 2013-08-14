@@ -1,3 +1,4 @@
 .idea
 *.iml
 cljs/.lein-cljsbuild-compiler-*
+cljs/target

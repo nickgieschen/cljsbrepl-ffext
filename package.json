@@ -1,10 +1,17 @@
 {
-  "name": "clbrowserrepl-addon",
-  "fullName": "clbrowserrepl-addon",
+  "name": "cljsbrepl-ffext",
+  "fullName": "ClojureScript REPL Connector",
   "id": "jid1-wU5ceaEVnlXA4g",
-  "description": "a basic add-on",
-  "author": "",
+  "description": "An extension which connects to a ClojureScript REPL",
+  "author": "Nick Gieschen",
   "license": "MPL 2.0",
   "version": "0.1",
-  "dependencies": ["menuitems" , "addon-sdk"]
+  "dependencies": ["menuitems" , "addon-sdk"],
+  "preferences": [{
+         "name": "port",
+         "title": "Port",
+         "description": "The port on which the REPL is listening",
+         "type": "string",
+         "value": "9000"
+  }]
 }

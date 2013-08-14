@@ -1,8 +1,5 @@
 (ns clbrowserrepl.core
    (:require [clojure.browser.repl :as repl]))
 
-(defn ^:export do-connect []
-  (repl/connect "http://localhost:9000/repl")
-)
+(.on js/self.port "repl-port" #(repl/connect (format "http://localhost:%s/repl" %)))
 
-(do-connect)
